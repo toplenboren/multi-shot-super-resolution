@@ -1,4 +1,4 @@
-# Upgrading IPhone telephoto miniature images with multi-shot super resolution
+# Using multi-frame super-resolution to upscale bad phone photos
 
 This repository is an *educational* implementation of MSSR technique described in [Park et al, 2003 – "Super-Resolution
 Image Reconstruction:
@@ -12,7 +12,7 @@ I have a phone with decent cameras, but when capturing 1/64 toy cars I get bad r
 
 # Multi shot super resolution
 
-Idea is simple – let us take multiple low resolution (LR) images of one object that would differ slightly. Then, let us combine information from all of them to create a high resolution (HR) image.
+Idea could be explained easily – let's take multiple low resolution (LR) images of one object that would differ slightly. Then, let's combine information from all of them to create a single high resolution (HR) image.
 
 Ref: (Park et al, 2003) https://perso.telecom-paristech.fr/maitre/cours/projet_superresolution/park.pdf
 
@@ -24,9 +24,8 @@ Survey argues:
 2. Let a set of known LR images be $y_k$ ($y_1, y_2, \dots, y_n$)
 3. Then $y_k$ can be described as combination of linear operators:
 
-$$y_k = D\, B_k\, M_k\, x + n_k$$
+    $$y_k = D\, B_k\, M_k\, x + n_k$$
 
-    Where: 
     - $D$ is a subsampling matrix – it is the same for all LR photos
     - $M_k$ is a motion compensation matrix (a slight camera shift)
     - $B_k$ is a blur matrix
