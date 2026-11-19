@@ -222,3 +222,7 @@ __marimo__/
 # Other files
 .codeiumignore
 README.bak.md
+
+# Temporary:
+results/*
+2D.ipynb

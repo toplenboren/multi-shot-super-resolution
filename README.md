@@ -6,20 +6,11 @@ A Technical Overview"](https://perso.telecom-paristech.fr/maitre/cours/projet_su
 
 ## Problem:
 
-I have an IPhone 16 Pro. Its cameras are good for the size, but it is hard to capture detailed images of miniatures without blur and noise.
-
-### Setup:
-
-| My photo | Goal |
-| :---: | :---: |
-| ![My photo](docs/f1hero.png) | ![Goal](https://lamleygroup.com/cdn/shop/articles/lamley-awards-history-cover.jpg?v=1794791313&width=1500) |
-
-### A closer look:
-
-
-# Multi shot super resolution
+I have a phone with decent cameras, but when capturing 1/64 toy cars I get bad results:
 
 ![alt text](docs/hero.png)
+
+# Multi shot super resolution
 
 Idea is simple – let us take multiple low resolution (LR) images of one object that would differ slightly. Then, let us combine information from all of them to create a high resolution (HR) image.
 
@@ -51,11 +42,11 @@ For better understanding I built a simple 1D example in `1D.ipynb`. In this note
 
 Additionally, reconstruction of motion matrix is explored there
 
-### 2D – [2D.ipynb](2D.ipynb)
+### 2D – [2D.ipynb](2D.ipynb) [Work in progress]
 
 This is 2D version of the same concept. In this notebook we would explore naive and more sophisticated methods described in article.
 
-### mssr.py and cli.py
+### mssr.py and cli.py [Work in progress]
 
 Main modules that are used by product.
 
@@ -70,7 +61,7 @@ Main modules that are used by product.
 
 ## Results
 
-## Limits and alternatives: 
+![alt text](docs/results.png)
 
 # AI Usage
 
@@ -80,7 +71,3 @@ As this is educational project, I wrote all code it by hand. However AI was used
 - AI was used to turn math on paper :-) to LaTex
 
 Outside of project code I used AI for helping me find related papers and helping me understand some concepts.
-
-# References
-- Park et al. 2003
-- Green MiniGT "Rexy" Porsche GT3R model was taken from: https://lamleygroup.com/blogs/news/from-mad-manga-to-rexy-a-history-of-the-lamley-awards
